@@ -1,5 +1,4 @@
-# Disaster Response Pipeline Project (Udacity - Data Science Nanodegree)
-### Haotong(James) Li
+# Disaster Response Pipeline Project - Udacity DSND Project 2
 
 ![Intro Pic](pics/intro.png)
 
