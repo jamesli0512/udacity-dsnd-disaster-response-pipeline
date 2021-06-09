@@ -95,7 +95,17 @@ def build_model():
             ])),
             ('clf', MultiOutputClassifier(RandomForestClassifier()))
         ])  
-    return pipeline
+    #return pipeline
+
+        # Create Grid search parameters
+    parameters = {
+        'features__text_pipeline__tfidf__use_idf': (True, False),
+        'clf__estimator__n_estimators': [10, 50, 100]
+    }
+
+    cv = GridSearchCV(pipeline, param_grid=parameters)
+
+    return cv
 
 
 def evaluate_model(model, X_test, y_test, category_names):
