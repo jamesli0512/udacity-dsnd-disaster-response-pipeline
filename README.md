@@ -5,6 +5,7 @@
 ## Table of Contents
 * [Project Motivation](#motivation)
 * [Installing](#installation)
+* [Files Description](#filedescription)
 * [Authors](#authors)
 * [License](#license)
 * [Acknowledgement](#acknowledgement)
@@ -14,7 +15,7 @@
 ## Project Motivation
 This project is to analyze disaster data from Figure Eight and build a model for an API that classifies disaster messages.
 
-This Project is part of Data Science Nanodegree Program by Udacity in collaboration with Figure Eight. The dataset contains pre-labelled tweet and messages from real-life disaster events. The project aim is to build a Natural Language Processing (NLP) model to categorize messages on a real time basis.
+This Project is part of Data Science Nanodegree Program by Udacity in collaboration with Figure Eight. The dataset contains pre-labelled tweet and messages from real-life disaster events. The project aim is to build a Natural Language Processing (NLP) model to categorize messages on a real time basis. People can utilize this app to parse text messages during real disaster time and send the messages to an appropriate disaster relief agency, so people in difference emergency situations can be assisted accordingly. During the disaster time when there are limited personal and resouce, this app would greatly improve the efficiency of organizations on their hands to make quick decisions and save time.
 
 This project is divided in the following key sections:
 
@@ -33,6 +34,26 @@ The libs used in this project including:
 * SQLlite Database Libraqries: `SQLalchemy`
 * Model Loading and Saving Library: `Pickle`
 * Web App and Data Visualization: `Flask`,`Plotly`
+
+<a name="filedescription"></a>
+### Files Description
+The file-folder structure of the project.
+
+```
+├── app     
+│   ├── run.py                           # Flask file that runs app
+│   └── templates   
+│       ├── go.html                      # Classification result page of web app
+│       └── master.html                  # Main page of web app    
+├── data                   
+│   ├── disaster_categories.csv          # Dataset to process 
+│   ├── disaster_messages.csv            # Dataset to process
+│   └── process_data.py                  # Data cleaning process script 
+├── models
+│   ├── train_classifier.py              # ML model process script
+|   └── classifier.pkl                   # Trained ML model
+└── README.md
+```
 
 <a name="authors"></a>
 ## Authors
